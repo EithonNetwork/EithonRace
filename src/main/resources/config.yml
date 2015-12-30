@@ -1,0 +1,204 @@
+eithon:
+  UseMarkUpForMessages: 1
+  UseWrappingForMessages: 1
+  
+  #
+  # Debug level
+  #  0 = NONE (no debug messages)
+  #  1 = MAJOR (only major messages)
+  #  2 = MINOR (also minor messages)
+  #  3 = VERBOSE (all messages)
+  #
+  DebugLevel: 1
+
+#
+# After how long time should the player be kicked
+#
+IdleKickTimeSpan: 4s
+
+#
+# What is the default arena price to enter a run? (Can be changed individually for each arena).
+#
+DefaultArenaPrice: 0.0
+
+#
+# What is the default arena reward for completing a run? (Can be changed individually for each arena).
+#
+DefaultArenaReward: 30.0
+
+#
+# Should we broadcast wins
+#
+BroadcastWins: true
+
+#
+# Time for potion
+#
+PotionDuration: 2
+
+#
+# Maximum distance for teleport without getting kicked from arena
+#
+ShortTeleportDistance: 5
+
+#
+# Should water restart run?
+#
+WaterRestartsRun: false
+
+#
+# Should we use checkpoints? (WaterRestartsRun = true overrides this)
+#
+UseCheckpoints: true
+
+#
+# Should we use teleport player back to where he joined the game?
+#
+TelePortAfterEnd: true
+
+#
+# The time span that the runner will keep a pumpkin helmet after receiving it
+#
+PumpkinHelmetTimeSpan: 2s
+
+#
+# The time span that the runner will freeze after activation
+#
+FreezeTimeSpan: 2s
+
+#
+# Time to wait before restart after fail. This time is needed to give the player time to realize his/her mistake
+#
+RestartTimeSpan: 10t
+
+#
+# Max total height over a block and still count as touching the block
+#
+MaxTotalDepth: 2
+
+#
+# Max number of air blocks that we will pass through to find a relevant block
+#
+MaxAirDepth: 0.5
+
+#
+# The speed for a jump
+#
+JumpSpeed: 1.5
+
+
+commands:
+
+
+messages:
+
+  #
+  # Broadcasted message if BroadcastWins is true
+  # Parameters: <player name> (%s), <arena name> (%s), <?> (%s), <?> (%s), <time> (%s)
+  #
+  PlayerFinished: '%s finished %s with %s %s. Time: %s'
+
+  #
+  # Parameters: <arena name> (%s)
+  ArenaAdded: Arena %s has been added.
+
+  #
+  # Parameters: <arena name> (%s)
+  ArenaRemoved: Arena %s has been removed.
+
+  #
+  # Parameters: <arena name 1> (%s) <arena name 2> (%s)
+  ArenasLinked: Arena %s and %s has been linked.
+
+  #
+  # Parameters: <arena name> (%s)
+  GotoArena: You have been teleported to Arena %s.
+
+  #
+  # Parameters: <arena name> (%s)
+  UnknownArena: Unknown arena (%s).
+
+  #
+  # Parameters: <arena name> (a%s)
+  Arena info: '%s'
+
+  #
+  # Parameters: <arena name> (%s)
+  JoinArena: '[actionbar/]You have joined Arena %s.'
+
+  #
+  # Parameters: <arena name> (%s)
+  LeftArena: You have left Arena %s.
+
+  #
+  # Parameters: -
+  ReachedCheckPoint: '[actionbar/]You have reached a check point.'
+
+  #
+  # Parameters: -
+  FailRestart: You failed, try again!
+
+  #
+  # Parameters: -
+  IdleKick: You were idle too long.
+
+  #
+  # Parameters: -
+  TeleportKick: You are not allowed to teleport in a game.
+
+  #
+  # Parameters: <player name> (%s), <arena name> (%s), <time> (%s), <coins> (%d)
+  BroadcastSuccess: '[color=darkaqua]%s[/color] [color=yellow]completed arena[/color] [color=darkaqua]%s[/color] [color=yellow]in [color=gold]%s[/color] [color=yellow]with [/color][color=gold]%d[/color] [color=yellow]coins.[/color]'
+
+  #
+  # Parameters: <amount> (%f)
+  WithdrawFailed: Could not withdraw %.2f from your account.
+
+  #
+  # Parameters: <amount> (%f)
+  WithdrawSucceeded: '%.2f was withdrawn from your account.'
+
+  #
+  # Parameters: <name> (%s), <amount> (%f)
+  PriceArena: 'The price for arena %s is now %.2f.'
+
+  #
+  # Parameters: <amount> (%f)
+  RewardFailed: 'Failed to reward you %.2f for completing the arena.'
+
+  #
+  # Parameters: <name> (%s), <amount> (%f)
+  Rewarded: 'You were rewarded %.2f for completing the arena.'
+
+  #
+  # Parameters: -
+  EffectSlowActivated: 'SLOWNESS effect applied!'
+
+  #
+  # Parameters: -
+  BounceActivated: Bounce!
+
+  #
+  # Parameters: -
+  FreezeActivated: Freeze!
+
+  #
+  # Parameters: -
+  PumpkinHelmetActivated: Pumpkin helmet!
+
+  #
+  # Parameters: -
+  BounceActivated: Bounce!
+
+  #
+  # Parameters: -
+  BounceActivated: Bounce!
+
+  #
+  # Parameters: -
+  BounceActivated: Bounce!
+
+  #
+  # Parameters: -
+  BounceActivated: Bounce!
+  

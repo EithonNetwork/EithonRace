@@ -1,0 +1,55 @@
+name: EithonRace
+main: net.eithon.plugin.race.Plugin
+version: 1.4
+author: vanbrayne
+description: A Minecraft plugin for race mini game
+depend: [EithonLibrary]
+commands:
+  erace:
+    description: Control race stuff
+    usage: /erace add | link | remove  | goto | list | leave | reset | price | reward
+    permission-message: You don't have <permission>
+permissions:
+  erace.*:
+    description: Gives access to all erace commands
+    default: op
+    erace.add: true
+    erace.link: true
+    erace.remove: true
+    erace.list: true
+    erace.goto: true
+    erace.join: true
+    erace.leave: true
+    erace.reset: true
+    erace.price: true
+    erace.reward: true
+  erace.add:
+    description: Access to /erace add command
+    default: op
+  erace.link:
+    description: Access to /erace link command
+    default: op
+  erace.remove:
+    description: Access to /erace remove command
+    default: op
+  erace.list:
+    description: Access to /erace list command
+    default: op
+  erace.goto:
+    description: Access to /erace goto command
+    default: op
+  erace.join:
+    description: Access to /erace join_named_arena command
+    default: op
+  erace.leave:
+    description: Access to /erace leave command
+    default: op
+  erace.reset:
+    description: Access to /erace reset command
+    default: op
+  erace.price:
+    description: Access to /erace price command
+    default: op
+  erace.reward:
+    description: Access to /erace reward command
+    default: op
